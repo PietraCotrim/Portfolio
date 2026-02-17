@@ -1,0 +1,273 @@
+﻿body {
+	display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    margin: 0;             
+    background: rgb(20, 50, 120);
+}
+
+.menu{
+    position:fixed;
+    width:100%;
+    height:50px;
+    background-color:rgb(10, 33, 85);
+    color:white;
+    margin-top: 0px;
+}
+
+.menu ul{
+    display:flex;
+    list-style:none;
+    height:100%;
+    align-items:center;
+    justify-content:center;
+    color:white;
+	gap:30px;	
+}
+
+.menu a{
+    text-decoration:none;
+	color:white;
+	transition: background 0.3s;
+	border-radius:3px;
+	padding: 8px 15px;
+}
+
+.menu a:hover{
+	background-color:grey;
+}
+
+.principal {
+    display:flex;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:40px;
+    text-align:center;
+    color:white;
+   
+}
+
+.quadrado{
+    background-color:rgb(10, 33, 85);
+    width:500px;
+    height:20px;
+}
+
+.foto {
+    margin-top: 60px;
+    padding: 15px 15px;
+    width: 220px;
+    height: 250px;
+    border-radius: 180px;
+}
+
+.dados {
+    max-width: 800px;      
+    text-align: center;
+    color: white;    
+}
+
+.dados ul {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0;
+}
+
+.dados li {
+    margin: 10px 0;
+    text-align: justify;
+    max-width:600px;
+}
+
+.RedesSociais{
+    display: inline-block;   
+}
+
+.RedesSociais i{
+    font-size: 30px;
+    color: white;
+    padding:10px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.RedesSociais i:hover{
+    transform: scale(1.2);
+}
+
+footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: rgb(10, 33, 85);
+    color: white;
+    padding: 15px;
+    height: 15px;
+    width: 100%;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.linguagens{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top:150px;
+    gap: 150px;
+}
+
+.linguagens a{
+    text-decoration: none;
+}
+
+.linguagens a h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color:white;
+
+}
+
+.linguagens img{
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+    display: inline-block;    
+}
+
+.linguagens a:hover img {
+    transform: scale(1.1);
+}
+
+.btn-voltar{
+    position: fixed;
+    top: 4rem;
+    left: 1rem;
+    background-color: rgb(10, 33, 85);
+    padding: 1rem;
+    border-radius: 1rem;
+    color:white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.ProjetosPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.Projetos{
+    margin-top: 120px;
+    border:solid;
+    border-radius:10px;
+    border-color: rgb(10, 33, 85);
+    padding: 8px;
+    background-color: rgb(10, 33, 85);
+    max-width: 18rem;
+    
+}
+
+.Projetos p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.2;
+    text-align: left;
+    max-width: 80%; 
+}
+
+.Projetos a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.Projetos a .bi {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+}
+
+.Projetos a:hover .bi {
+    transform: scale(1.1);
+}
+
+.Projetos h2
+{
+    color:white;
+}
+
+.Projetos img{
+    margin-bottom: 1rem;
+    width: 7rem;
+    height: 7rem;
+    padding:10px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.Projetos img:hover{
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+.principal{
+    justify-content: center;
+    width: 100%;
+}
+
+.principal h3{
+    font-size: 2rem;
+}
+
+.foto{
+    width: 10rem;
+    height:10rem;
+}
+
+.dados{
+    width: 80%;
+}
+
+.linguagens{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.btn-voltar{
+    position: static;
+    margin: 5rem 0rem 0rem 1rem; 
+    align-self: flex-start;
+}
+
+.ProjetosPrincipal{
+       margin-bottom: 5rem;
+}
+
+.Projetos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:1rem;
+    padding: 0%;
+    max-width: 80%;
+}
+
+.Projetos p{
+    font-size: 1rem;
+    text-align: left;
+    max-width: 80%; 
+}
+
+}
