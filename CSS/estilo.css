@@ -80,6 +80,11 @@
     max-width:600px;
 }
 
+.dados li.ultima-linha{
+    margin-bottom: 4rem;
+
+}
+
 .RedesSociais{
     display: inline-block;   
 }
@@ -220,6 +225,10 @@ footer {
 
 
 @media (max-width: 768px) {
+
+.menu ul{ 
+    padding:0%;
+}
 .principal{
     justify-content: center;
     width: 100%;
@@ -257,7 +266,7 @@ footer {
 }
 
 .dados li.ultima-linha{
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 
 }
 
@@ -278,10 +287,14 @@ footer {
     text-align: left;
     max-width: 80%; 
 }
+
+
 footer{
     display:flex;
     flex-direction: column;
-        height:3rem ;
+    height:3rem ;
+    padding:1rem 0rem 0rem 0rem ;
+    
 }
 footer p{
     margin: 0%;
